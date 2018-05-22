@@ -1,0 +1,105 @@
+{
+  // 禁止 Prettier Now 对 JavaScript 进行格式化
+  "prettier.javascriptEnable": [],
+
+  // 针对 JavaScript 单独的配置 
+  "[javascript]": {},
+
+  // 保存自动格式化
+  "editor.formatOnSave": true,
+
+  // 是否启用 JavaScript 格式化程序
+  "javascript.format.enable": true,
+
+  // 定义逗号分隔符后面的空格处理
+  "javascript.format.insertSpaceAfterCommaDelimiter": true,
+
+  // 定义构造器关键字后的空格处理。要求 TypeScript >= 2.3.0。
+  "javascript.format.insertSpaceAfterConstructor": false,
+
+  // 定义匿名函数的函数关键字后面的空格处理。
+  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+
+  // 定义控制流语句中关键字后面的空格处理。
+  "javascript.format.insertSpaceAfterKeywordsInControlFlowStatements": true,
+
+  // 定义 JSX 表达式左括号后面和右括号前面的空格处理。要求 TypeScript >= 2.0.6。
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+
+  // 定义非空大括号的左括号后和右括号前的空格处理方式。要求 TypeScript >= 2.3.0。
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+
+  // 定义非空中括号的左括号后和右括号前的空格处理方式。
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+
+  // 定义非空小括号的左括号后和右括号前的空格处理方式。
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+
+  // 定义模板字符串的左括号后面和右括号前面的空格处理。要求 TypeScript >= 2.0.6。
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+
+  // 在 For 语句中，定义分号后面的空格处理。
+  "javascript.format.insertSpaceAfterSemicolonInForStatements": true,
+
+  // 定义二进制运算符后面的空格处理
+  "javascript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
+
+  // 在函数参数括号前定义空格处理。需要 TypeScript >= 2.1.5。
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+
+  // 定义控制块的左括号是否放置在新的一行。
+  "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+
+  // 定义函数的左大括号是否放置在新的一行。
+  "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+
+  // 启用或禁用 JavaScript 文件的语义检查。若有 jsconfig.json 或 tsconfig.json 文件，将覆盖此设置。要求 TypeScript >= 2.3.1。
+  "javascript.implicitProjectConfig.checkJs": false,
+
+  // 对不属于任何工程的 JavaScript 文件启用或禁用 "experimentalDecorators" 设置。若有 jsconfig.json 或 tsconfig.json 文件，将覆盖此设置。要求 TypeScript >= 2.3.1。
+  "javascript.implicitProjectConfig.experimentalDecorators": false,
+
+  // 启用/禁用在 JavaScript 建议列表中包含文件中的唯一名称。
+  "javascript.nameSuggestions": true,
+
+  // 自动 import 语句中首选的路径类型:
+  // - "relative"，相对路径。
+  // - "non-relative"，根据 "jsconfig.json" 或 "tsconfig.json" 中设置的 "baseUrl" 的计算出的路径。
+  // - "auto"，推测最短路径类型。
+  // 要求 TypeScript >= 2.9
+  "javascript.preferences.importModuleSpecifier": "auto",
+
+  // 用于快速修复的首选引用样式: "single" (单引号)、"double" (双引号) 或 "auto" (从已有 import 语句中推测引号类型)。要求 TypeScript >= 2.9
+  "javascript.preferences.quoteStyle": "auto",
+
+  // 启用/禁用在 JavaScript 文件中引用 CodeLens。
+  "javascript.referencesCodeLens.enabled": false,
+
+  // 启用或禁用突出显示代码中未使用的变量。要求 TypeScript >= 2.9
+  "javascript.showUnused": true,
+
+  // 在 JavaScript 文件中启用或禁用编辑器的建议诊断。需要 TypeScript >= 2.8
+  "javascript.suggestionActions.enabled": true,
+
+  // 在 VS Code 中重命名或移动文件时启用或禁用自动更新 import 语句的路径。可选值有: "prompt" (在每次重命名时提示)、"always" (始终自动更新路径) 和 "never" (从不重命名路径且不要提示)。要求 TypeScript >= 2.9
+  "javascript.updateImportsOnFileMove.enabled": "prompt",
+
+  // 启用/禁用 JavaScript 验证。
+  "javascript.validate.enable": true,
+
+  "gitlens.hovers.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.statusBar.enabled": false,
+  "gitlens.gitExplorer.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.blame.heatmap.enabled": false,
+  "gitlens.mode.statusBar.enabled": false,
+  "gitlens.historyExplorer.enabled": false,
+  "gitlens.blame.highlight.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.advanced.caching.enabled": false,
+  "gitlens.advanced.telemetry.enabled": false,
+  "gitlens.hovers.annotations.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.hovers.currentLine.enabled": false
+}
