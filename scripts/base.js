@@ -1,6 +1,5 @@
 const { appDirectory, resolve, resolveOwn } = require('./paths');
 const merge = require('webpack-merge');
-const baseConfig = require('./base');
 
 // 应用
 const { VueLoaderPlugin } = require('vue-loader');
@@ -15,7 +14,7 @@ module.exports = {
   entry: {
     app: [resolve('src/index.js')],
   },
-  
+
   // 出口
   output: {
     path: resolve('dist'),
@@ -27,7 +26,7 @@ module.exports = {
   resolve: {
     // 导入忽略后缀
     extensions: ['.js', '.mjs', '.vue', '.json'],
-    
+
     // 别名
     alias: {
       vue$: 'vue/dist/vue.esm.js',
