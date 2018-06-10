@@ -9,7 +9,7 @@ const HtmlPlugin = require('html-webpack-plugin');
 
 const devConfig = merge(baseConfig, {
   mode: 'development',
-  
+
   plugins: [
     new HtmlPlugin({
       title: 'React App',
@@ -27,7 +27,7 @@ const devConfig = merge(baseConfig, {
   devServer: {
     // 打开浏览器
     open: true,
-    
+
     // 不跳转
     historyApiFallback: true,
 
@@ -44,7 +44,7 @@ const devConfig = merge(baseConfig, {
 
     // 信息显示
     noInfo: false,
-    
+
     // 端口
     port: process.env.PORT || 8000,
 
@@ -54,7 +54,7 @@ const devConfig = merge(baseConfig, {
 
   module: {
     rules: [
-    
+
       // PostCSS and CSS
       {
         test: /\.(css|postcss)$/,
@@ -64,7 +64,7 @@ const devConfig = merge(baseConfig, {
           {loader: 'postcss-loader', options: {sourceMap: true,},},
         ]
       },
-    
+
       // Sass
       {
         test: /\.(sass|scss)$/,

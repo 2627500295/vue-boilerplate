@@ -52,6 +52,6 @@ yarn run build
     - 字体处理
     - 媒体处理
 
-## 参考
+## 参考
   - vue-loader 官网
   - copy-webpack-plug 官网

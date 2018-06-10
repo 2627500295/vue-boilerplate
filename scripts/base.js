@@ -30,7 +30,7 @@ module.exports = {
     // 别名
     alias: {
       vue$: 'vue/dist/vue.esm.js',
-      '@': resolve('src')
+      '@': resolve('src'),
     },
 
     // 模块目录
