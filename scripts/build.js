@@ -24,17 +24,45 @@ const stylExtract = new ExtractTextPlugin("assets/styles/styl.[hash:5].css");
 // prodConfig
 const prodConfig = merge(baseConfig, {
   // 模式
+  // [webpack4 Mode的默认设置]{@link https://segmentfault.com/a/1190000013712229}
   mode: "production",
 
   // 优化
   optimization: {
     minimize: true,
 
-    // ??? 代码分片 忘记了
-    // runtimeChunk: {
-    //   name: (entrypoint) => `runtimechunk~${entrypoint.name}`,
-    // },
-    
+    // 分割公共代码
+    // [split-chunks-plugin]{@link https://webpack.js.org/plugins/split-chunks-plugin/}
+    splitChunks: {
+      chunks: 'all',
+      miniSize: 30000,
+      miniChunks: 1,
+      // maxAsyncRequests: 5,
+      // maxInitialRequests: 3,
+      // automaticNameDelimiter: '~',
+      name: true,
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          priority: -10
+        },
+        default: {
+          minChunks: 2,
+          priority: -20,
+          reuseExistingChunk: true
+        }
+      }
+    },
+
+    // 为 webpack 运行时代码创建单独的chunk
+    // https://webpack.js.org/configuration/optimization/#optimization-runtimechunk
+    runtimeChunk: {
+      name: (entrypoint) => `runtimechunk~${entrypoint.name}`,
+    },
+
+    // 编译错误时不写入到输出
+    noEmitOnErrors: true,
+
   },
 
   plugins: [
