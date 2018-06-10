@@ -1,6 +1,5 @@
 const { appDirectory, resolve, resolveOwn } = require('./paths');
 const merge = require('webpack-merge');
-const baseConfig = require('./base');
 
 // 应用
 const { VueLoaderPlugin } = require('vue-loader');
