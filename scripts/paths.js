@@ -1,12 +1,16 @@
 const fs = require('fs');
 const path = require('path');
 
-export const appDirectory = fs.realpathSync(process.cwd());
+const appDirectory = fs.realpathSync(process.cwd());
 
-export const resolve = (dir = '') => {
+const resolve = (dir) => {
+  if (dir === void 0 || dir === null) { dir = '' };
   return path.resolve(appDirectory, dir);
 };
 
-export const resolveOwn = (dir = '') => {
+const resolveOwn = (dir) => {
+  if (dir === void 0 || dir === null) { dir = '' };
   return path.resolve(__dirname, '..', dir);
 };
+
+module.exports = {resolve, appDirectory, resolveOwn}
